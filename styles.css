@@ -148,7 +148,7 @@ a {
         font-size:clamp(1vw, 2vw, 2.5rem); 
     }
     .item_5 {
-        height: 90%;
+        height: 95%;
         justify-items: center;  
     }
     .item_5 img {
