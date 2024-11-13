@@ -177,6 +177,6 @@ a {
         height:auto;
     }
     .item_7 p {
-        font-size: clamp(1vw, 2.5vw, 2.5rem);
+        font-size: clamp(1vw, 2.5vw, 2.5rem); /*Comment for comment */
     }
 }
