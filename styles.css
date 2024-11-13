@@ -145,8 +145,8 @@ a {
     .item_2{
         height: 100%;
     }
-    .item_2, .item_4, .item_6 {
-        font-size: 2.4vh;
+    .item_2 ul {
+        font-size: 2.5vw;
     }
 
     .item_5 {
@@ -162,7 +162,11 @@ a {
         height: 62.4vh;
     }
     .item_4 h2, .item_7 h1 {
-        font-size: 2.8vh; 
+        font-size: 2vh; 
+    }
+    .item_4 ul {
+        
+        font-size: 2.5vw;
     }
 
     .item_6{
