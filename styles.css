@@ -132,9 +132,10 @@ a {
     .container {
         grid-template-columns: 20% 1fr 20%; 
     }
-    .item_1, .item_7 {
+    .item_1 {
         height: auto; 
         padding: 10px; 
+        font-size: clamp(1vw, 2.5vw, 2.5rem);
     }
     .item_2{
         height: 100%;
@@ -142,6 +143,9 @@ a {
     .item_2 ul {
         margin-left: 1,45vh;
         font-size: clamp(1vw, 2.5vw, 2.5rem);
+    }
+    .item_3{
+        font-size:clamp(1vw, 2vw, 2.5rem); 
     }
     .item_5 {
         height: 90%;
@@ -163,11 +167,15 @@ a {
         font-size: clamp(1vw, 2.5vw, 2.5rem);
     }
     .item_6{
-        font-size: 15px;
+        font-size:clamp(1vw, 2vw, 2.5rem); 
         height: 10%;
         text-align: center;
     }
+    .item_7{
+
+        height:auto;
+    }
     .item_7 p {
-        font-size: 18px; 
+        font-size: clamp(1vw, 2.5vw, 2.5rem);
     }
 }
