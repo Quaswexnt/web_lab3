@@ -86,8 +86,8 @@ a {
     grid-column: 2 / 3;
     grid-row: 2;
     align-self: end;
-    height: 65.5vh;
-    width: 100%;
+    height: 65.4vh;
+    width: 99.9%;
     display: grid;
     justify-content: center; 
     align-items: center; 
@@ -135,38 +135,42 @@ a {
   }
 
   @media (max-width: 768px) {
-    /* Изменяем ширину колонок в сетке, чтобы оставить структуру */
     .container {
-        grid-template-columns: 25% 1fr 25%; /* Уменьшаем боковые колонки */
-        gap: 5px; /* Уменьшаем зазор между элементами */
+        grid-template-columns: 20% 1fr 20%; 
     }
-    
-    /* Адаптируем item_1 и item_7 для более компактного вида */
     .item_1, .item_7 {
-        height: auto; /* Позволяет элементам занимать высоту по содержимому */
-        padding: 10px; /* Добавляем отступы для улучшения восприятия */
+        height: auto; 
+        padding: 10px; 
     }
-
-    /* Уменьшаем шрифт для боковых блоков, чтобы освободить место */
+    .item_2{
+        height: 100%;
+    }
     .item_2, .item_4, .item_6 {
         font-size: 24px;
     }
-    
-    /* Адаптируем размер и выравнивание основного содержимого в item_5 */
+
     .item_5 {
-        padding: 5px; /* Сжимаем отступы */
+        height: 90%;
+        justify-items: center;  
     }
     .item_5 img {
-        width: 80%; /* Уменьшаем размер изображения, сохраняя пропорции */
-        height: auto;
+
+        width: auto; 
+        height: 100%;
+    }
+    .item_4{
+        height: 62.2vh;
+    }
+    .item_4 h2, .item_7 h1 {
+        font-size: 28px; 
     }
 
-    /* Уменьшаем шрифты заголовков и текста */
-    .item_4 h2, .item_7 h1 {
-        font-size: 28px; /* Делает текст более компактным */
+    .item_6{
+        font-size: 15px;
+        height: 5vh;
+        text-align: center;
     }
-    
     .item_7 p {
-        font-size: 18px; /* Меньший шрифт для описания */
+        font-size: 18px; 
     }
 }
