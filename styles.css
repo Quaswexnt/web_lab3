@@ -21,7 +21,7 @@ a {
     display: grid;
     grid-template-columns: 20% 1fr 20%; 
     gap: 0px; 
-    height: 100vh;
+    height: 100%;
     grid-auto-rows: minmax(10,auto);
 }
 
@@ -153,11 +153,12 @@ a {
     }
     .item_5 img {
 
-        width: auto; 
+        width: 99.9%;; 
         height: 100%;
     }
     .item_4{
-        height: 62.4vh;
+        height: 64vh;
+        
     }
     .item_4 h2, .item_7 h1 {
         font-size: 1.5vh; 
@@ -168,7 +169,7 @@ a {
     }
     .item_6{
         font-size:clamp(1vw, 2vw, 2.5rem); 
-        height: 10%;
+        height: 8.5vh;
         text-align: center;
     }
     .item_7{
