@@ -130,53 +130,95 @@ a {
 
   @media (max-width: 768px) {
     .container {
-        grid-template-columns: 20% 1fr 20%; 
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto ; 
     }
+
+    .item {
+        grid-column: 1 / 2; 
+        font-size: 1.8vw;
+    }
+
     .item_1 {
-        height: auto; 
-        padding: 10px; 
-        font-size: clamp(1vw, 2.5vw, 2.5rem);
+        grid-row: 1;
+        height: 16vh ;
     }
-    .item_2{
-        height: 100%;
+
+    .item_3 {
+        grid-row: 2;
+        height: 6vh;
+    }
+
+    .item_5 {
+        grid-row: 3; 
+        height: 55.5vh;
+    }
+
+    .item_4 {
+        grid-row: 4;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+    }
+    
+    .item_4 ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0; 
+    }
+    
+    .item_4 ul li {
+        margin-right: 1rem;
+    }
+    
+    .item_4 h2 {
+        margin: 0;
+        text-align: right;
+    }
+    
+
+    .item_2 {
+        grid-row: 5;
+        height: 6.5vh;
     }
     .item_2 ul {
-        margin-left: 1,45vh;
-        font-size: clamp(1vw, 2.5vw, 2.5rem);
+        text-align: center; 
+        padding: 0; 
+        margin: 0;
+        list-style: none;
     }
-    .item_3{
-        font-size:clamp(1vw, 2vw, 2.5rem); 
+    
+    .item_2 ul li {
+        display: inline;
+        margin: 0 10px; 
     }
-    .item_5 {
-        height: 95%;
-        justify-items: center;  
+
+    .item_6 {
+        grid-row: 6;
+        height: 6vh;
     }
+
+    .item_7 {
+        grid-row: 7;
+        height: 6vh;
+        text-align: start;
+    }
+
     .item_5 img {
+        width: 76vh;
+        object-fit: contain; 
+    }
 
-        width: 99.9%;; 
-        height: 100%;
+    .item_7 h1 {
+        margin: 0;
+        text-align: end;
+        font-size: 2vh;
     }
-    .item_4{
-        height: 64vh;
-        
-    }
-    .item_4 h2, .item_7 h1 {
-        font-size: 1.5vh; 
-    }
-    .item_4 ul {
-        margin-left: 1.45vh;
-        font-size: clamp(1vw, 2.5vw, 2.5rem);
-    }
-    .item_6{
-        font-size:clamp(1vw, 2vw, 2.5rem); 
-        height: 8.5vh;
-        text-align: center;
-    }
-    .item_7{
 
-        height:auto;
-    }
-    .item_7 p {
-        font-size: clamp(1vw, 2.5vw, 2.5rem); /*Comment for comment */
-    }
+    
 }
+
